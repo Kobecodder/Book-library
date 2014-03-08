@@ -13,8 +13,7 @@ urlpatterns = patterns('',
 
 
     url(r'^books/', include('books.urls')),
-    url(r'^reports/', include('reports.urls')),
-    # url(r'^home/$', views.slide, name="slide"),
+
 
 )
 
