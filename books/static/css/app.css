@@ -1,0 +1,242 @@
+/* app css stylesheet */
+
+
+
+
+
+
+.top-bar{
+    background: none repeat scroll 0 0 #052f5f;
+}
+
+
+
+.top-bar-section li a:not(.button) {
+    background: none repeat scroll 0 0 #052f5f;
+}
+
+input.ng-invalid.ng-dirty {
+    background-color: pink;
+}
+
+input.ng-valid.ng-dirty {
+    background-color: #ffffff;
+}
+
+label.sortOrder{
+    display: inline;
+}
+/*.row-fluid .album .span2{*/
+    /*width: 17.53%;*/
+/*}*/
+
+.album img {
+
+    height: 150px;
+    width: 190px;
+}
+
+.album ul li {
+    float: left;
+    padding: 10px;
+    list-style: none;
+}
+.album span a{
+    text-align: center;
+}
+
+.album-cover {
+    box-shadow: 3px 2px 5px #1e1e1e;
+}
+
+
+.album {
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px #1e1e1e;
+}
+
+.album-list {
+    margin: auto;
+    padding-left: 40px;
+}
+
+.album-detail{
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px #1e1e1e;
+
+}
+
+/*body {*/
+    /*background-color: #052f5f;*/
+/*}*/
+
+#wrapper {
+    background-color: #FFFFFF;
+    padding-bottom: 30px;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+.image-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.image-list img {
+    width: 200px;
+    height: 150px;
+}
+
+.cover-image img {
+    width: 600px;
+    height: 400px;
+}
+
+#sidebar input {
+    width: 85%;
+    height: 50%;
+}
+
+#main {
+ margin:0 auto;
+ float:none;
+}
+.centered {
+  text-align: center;
+}
+
+ .body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+.bighight{
+    height: 360px;
+}
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span3 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span3 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+    }
+    @media (max-width: 767px) {
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+    }

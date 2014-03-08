@@ -1,0 +1,85 @@
+
+
+
+<!-- Grid Example -->
+
+
+<div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span5 hero-unit">
+        <h1>{% verbatim %}{{ response_data.book_title }}{% endverbatim %}</h1>
+         {% verbatim %}
+     <table>
+
+         <tr><td><h3 class="btn btn-large btn-primary">Publication Description</h3></td> </tr>
+
+         <tr><td><article>{{response_data.book_overview}}</article></td> </tr>
+
+         <tr><td><h4 class="btn btn-inverse">Publication Detail</h4></td> </tr>
+         <tr><td>Catagory:{{response_data.book_catagory}}</td></tr>
+         <tr><td>Author Name:{{response_data.book_author_name}}</td></tr>
+
+
+     </table>
+
+     {% endverbatim %}
+
+        <a href="{{MEDIA_URL}}{% verbatim %}{{response_data.book_upload}}{% endverbatim %}" class="btn btn-large btn-success">Download</a>
+
+
+
+
+    </div>
+    <div class="span3 thumbnail img-circle hero-unit"> <img ng-src="{{MEDIA_URL}}{% verbatim %}{{response_data.book_cover_image}}{% endverbatim %}" alt="" class="album-detail"></div>
+    <div class="span2"></div>
+
+
+</div>
+
+
+
+
+
+
+{#<div class="row-fluid">#}
+{##}
+{##}
+{#    <div class=" cover-image span12">#}
+{#        <h1>{% verbatim %}{{ response_data.book_title }}{% endverbatim %}</h1>#}
+{##}
+{#        <img ng-src="{{MEDIA_URL}}{% verbatim %}{{response_data.book_cover_image}}{% endverbatim %}" alt="" class="pull-right">#}
+{##}
+{#        <a href="{{MEDIA_URL}}{% verbatim %}{{response_data.book_upload}}{% endverbatim %}">Download#}
+{#    </a>#}
+{##}
+{##}
+{##}
+{#    {% verbatim %}#}
+{#     <table>#}
+{##}
+{#         <tr><td><h2>Publication Description</h2></td> </tr>#}
+{##}
+{#         <tr><td>{{response_data.book_overview}}</td> </tr>#}
+{##}
+{#         <tr><td><h3>Publication Detail</h3></td> </tr>#}
+{#         <tr><td>Catagory:{{response_data.book_catagory}}</td></tr>#}
+{#         <tr><td>Author Name:{{response_data.book_author_name}}</td></tr>#}
+{#         <tr><td>Identity:{{response_data.book_author_profession}}</td></tr>#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#     </table>#}
+{##}
+{#     {% endverbatim %}#}
+{##}
+{##}
+{#    </div>#}
+{#<tr>Catagory:{{response_data.book_catagory}}</tr>#}
+{#    <li>Author Name:{{response_data.book_author_name}}</li>#}
+{#    <li>Identity:{{response_data.book_author_profession}}</li>#}
+
+{#</div>#}
+

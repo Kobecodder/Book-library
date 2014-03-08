@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" ng-app="angallery" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="angallery" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+
+<head>
+    <link rel="icon" href="http://us.123rf.com/400wm/400/400/alexwhite/alexwhite1209/alexwhite120900529/15471651-news-icon.jpg" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quantum Photo Services</title>
+
+
+
+    <link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css" />
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/app.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+    	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+		</a>
+    <a class="brand" href="/home">Academy Conference</a>
+
+    <div class="nav-collapse">
+    <ul class="nav pull-right">
+{#      <li class="active"><a href="/home">Home</a> </li>#}
+{#      <li><a href="/books">Books</a></li>#}
+      <li><a href="/reports">publication</a></li>
+{#      <li><a href="/books/upload">Upload</a></li>#}
+      <li><a href="/books/contact">contact</a></li>
+
+    </ul>
+    </div>
+    </div>
+   </nav>
+
+    {% block body %}{% endblock %}
+
+    <ng-view></ng-view>
+
+
+
+<script src="{{STATIC_URL}}libraries/vendor/jquery.js"></script>
+<script src="{{STATIC_URL}}libraries/angular/angular.js"></script>
+<script src="{{STATIC_URL}}libraries/angular/simplePagination.js"></script>
+<script src="{{STATIC_URL}}libraries/angular/angular-resource.js"></script>
+<script src="{{STATIC_URL}}books/js/app.js"></script>
+<script src="{{STATIC_URL}}books/js/services.js"></script>
+<script src="{{STATIC_URL}}books/js/controllers.js"></script>
+<script src="{{STATIC_URL}}books/js/filters.js"></script>
+<script src="{{STATIC_URL}}books/js/directives.js"></script>
+<script src="{{STATIC_URL}}libraries/vendor/holder.js"></script>
+
+</body>
+
+

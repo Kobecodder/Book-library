@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+{% block body %}
+    <div class="row-fluid">
+    <div class="span3"></div>
+    <div class="span6 hero-unit">
+    <div class="alert alert-info about">
+        <h3 class="btn-success btn-large">Contact us</h3>
+        <blockquote><p><small><i>If you have any question and suggestion please inform us </i></small></p><blockquote>
+    </div>
+    <form action="/archive/contact/" method="post"
+          {% if form.is_multipart %}enctype="multipart/form-data"{% endif %}>{% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="fieldWrapper">
+            {% if form.subject.errors %}
+                <div class="alert alert-error">
+                    {{ form.subject.errors }}
+                </div>
+            {% endif %}
+            <label for="id_subject">Email subject:</label>
+            {{ form.subject }}
+        </div>
+        <div class="fieldWrapper">
+            {% if form.message.errors %}
+                <div class="alert alert-error">
+                    {{ form.message.errors }}
+                </div>
+            {% endif %}
+            <label for="id_message">Your message:</label>
+            {{ form.message }}
+        <div class="fieldWrapper">
+            {% if form.sender.errors %}
+                <div class="alert alert-error">
+                    {{ form.sender.errors }}
+                </div>
+            {% endif %}
+            <label for="id_sender">Your email address:</label>
+            {{ form.sender }}
+        </div>
+        
+        <input type="submit" class="btn btn-primary" value="Contact Us"/>
+    </form>
+    </div>
+    <div class="span3"></div>
+
+
+ </div>
+
+{% endblock %}
